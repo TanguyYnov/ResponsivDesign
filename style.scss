@@ -129,6 +129,12 @@ html {
             justify-content: space-around;
             margin-left: 110px;
 
+            @media (max-width: 767.98px) {
+                .display-none {
+                    display: wrap;
+                }
+            }
+
 
 
             .block-1 {
@@ -166,5 +172,11 @@ html {
             display: flex;
             justify-content: space-around;
         }
+
+    }
+
+
+    .i {
+        width: 50px;
     }
 }

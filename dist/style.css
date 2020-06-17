@@ -141,6 +141,13 @@ html footer .endmenu-2 {
   margin-left: 110px;
 }
 
+@media (max-width: 767.98px) {
+  body footer .endmenu-2 .display-none,
+  html footer .endmenu-2 .display-none {
+    display: wrap;
+  }
+}
+
 body footer .endmenu-2 .block-1,
 html footer .endmenu-2 .block-1 {
   width: 25%;
@@ -173,4 +180,9 @@ html footer .endmenu-4 {
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
+}
+
+body .i,
+html .i {
+  width: 50px;
 }
