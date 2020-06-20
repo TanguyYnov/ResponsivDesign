@@ -3,6 +3,13 @@ $color-1: #173754;
 /*  nav link color:hover */
 $color-2: #1eafdd;
 
+// Breakpoints 
+$xsmall: 370px;
+$small: 700px;
+$medium: 1080px;
+$large: 1400px;
+$xlarge: 1920px;
+
 /* main rules */
 body,
 html {
@@ -68,7 +75,7 @@ html {
                     margin: 0 10px;
 
                     /* Bootstrap SM breakpoint */
-                    @media (max-width: 767.98px) {
+                    @media (max-width: $small) {
                         .display-none {
                             display: none;
                         }
@@ -119,6 +126,11 @@ html {
         .endmenu-1 {
             color: white;
             text-align: center;
+            padding-top: 70px;
+            //border-bottom: 10px solid rgba(245, 237, 126, 0.904);
+            //border-radius: 2%;
+            //margin-left: 600px;
+            //margin-right: 600px;
 
         }
 
@@ -129,17 +141,16 @@ html {
             justify-content: space-around;
             margin-left: 90px;
 
-            @media (max-width: 767.98px) {
-                .block-3 {
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                }
-
-                .block-4 {
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                }
+            h4 {
+                color: rgba(245, 237, 126, 0.904);
             }
+
+
+
+            p {
+                color: rgba(177, 196, 221, 0.5);
+            }
+
 
 
 
@@ -148,12 +159,16 @@ html {
                 margin-right: 25px;
                 justify-content: space-around;
 
+
+
             }
 
             .block-2 {
                 width: 25%;
                 margin-right: 25px;
                 justify-content: space-around;
+
+
 
             }
 
@@ -166,8 +181,10 @@ html {
 
             .block-4 {
                 width: 25%;
-                justify-content: space-around;
                 margin-right: 25px;
+                justify-content: space-around;
+
+
             }
 
 
@@ -177,13 +194,21 @@ html {
             padding-top: 50px;
             display: flex;
             justify-content: space-around;
+
+            p {
+                color: rgba(177, 196, 221, 0.5);
+            }
         }
 
         .endmenu-4 {
-            padding-top: 50px;
             display: flex;
-            justify-content: space-around;
-            margin-left: 50px;
+            padding-top: 30px;
+            margin-bottom: 35px;
+            margin-left: 80px;
+            margin-right: 80px;
+            color: rgba(177, 196, 221, 0.5);
+            border-top: 1px solid rgba(177, 196, 221, 0.5);
+
         }
 
     }
