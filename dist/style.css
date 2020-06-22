@@ -8,11 +8,7 @@ html {
   /* BLOCK NAV */
   /* BLOCK-MAIN */
   /* FOOTER */
-  /* media queries for screen-xs */
-  /* media queries for screen-sm */
-  /* media queries for screen-md */
-  /* media queries for screen-lg */
-  /* media queries for screen-xl */
+  /* MEDIA QUERIES FOR SCREEN-XL */
 }
 
 body nav,
@@ -117,35 +113,45 @@ html .block-main .container p {
   text-align: left;
 }
 
+body .card,
+html .card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* MEDIA QUERIES FOR SCREEN-XS */
+  /* MEDIA QUERIES FOR SCREEN-SM */
+  /* MEDIA QUERIES FOR SCREEN-MD */
+  /* MEDIA QUERIES FOR SCREEN-LG */
+}
+
 @media (max-width: 370px) {
-  body footer,
-  html footer {
+  body .card .card-boutique,
+  html .card .card-boutique {
     background-color: green;
     color: rgba(177, 196, 221, 0.5);
   }
 }
 
 @media (max-width: 700px) {
-  body footer,
-  html footer {
+  body .card .card-benefices,
+  html .card .card-benefices {
     background-color: pink;
     color: rgba(177, 196, 221, 0.5);
   }
 }
 
 @media (max-width: 1080px) {
-  body footer,
-  html footer {
+  body .card .card-musique,
+  html .card .card-musique {
     background-color: purple;
     color: rgba(177, 196, 221, 0.5);
   }
 }
 
 @media (max-width: 1400px) {
-  body footer,
-  html footer {
-    background-color: orange;
-    color: rgba(177, 196, 221, 0.5);
+  body .card .card-horaire,
+  html .card .card-horaire {
+    background-color: red;
   }
 }
 
@@ -153,6 +159,9 @@ html .block-main .container p {
   body footer,
   html footer {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #173754;
     color: rgba(177, 196, 221, 0.5);
   }
@@ -192,6 +201,7 @@ html .block-main .container p {
     padding-top: 50px;
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
   body footer .wrapper-footer .footer-body .card,

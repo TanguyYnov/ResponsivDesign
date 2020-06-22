@@ -109,50 +109,59 @@ html {
     }
 
     /* FOOTER */
+    .card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
 
-    /* media queries for screen-xs */
-    @media (max-width: $screen-xs) {
-        footer {
-            background-color: green;
-            color: rgba(177, 196, 221, 0.5);
+        /* MEDIA QUERIES FOR SCREEN-XS */
+        @media (max-width: $screen-xs) {
+            .card-boutique {
+                background-color: green;
+                color: rgba(177, 196, 221, 0.5);
+            }
+        }
+
+        /* MEDIA QUERIES FOR SCREEN-SM */
+        @media (max-width: $screen-sm) {
+
+            .card-benefices {
+                background-color: pink;
+                color: rgba(177, 196, 221, 0.5);
+            }
+        }
+
+        /* MEDIA QUERIES FOR SCREEN-MD */
+        @media (max-width: $screen-md) {
+            .card-musique {
+                background-color: purple;
+                color: rgba(177, 196, 221, 0.5);
+                // flex: 0 0 50%;
+            }
+        }
+
+        /* MEDIA QUERIES FOR SCREEN-LG */
+        @media (max-width: $screen-lg) {
+            .card-horaire {
+                background-color: red;
+            }
         }
     }
 
-    /* media queries for screen-sm */
-    @media (max-width: $screen-sm) {
-        footer {
-            background-color: pink;
-            color: rgba(177, 196, 221, 0.5);
-        }
-    }
-
-    /* media queries for screen-md */
-    @media (max-width: $screen-md) {
-        footer {
-            background-color: purple;
-            color: rgba(177, 196, 221, 0.5);
-        }
-    }
-
-    /* media queries for screen-lg */
-    @media (max-width: $screen-lg) {
-        footer {
-            background-color: orange;
-            color: rgba(177, 196, 221, 0.5);
-        }
-    }
-
-    /* media queries for screen-xl */
+    /* MEDIA QUERIES FOR SCREEN-XL */
     @media (max-width: $screen-xl) {
         footer {
             height: auto;
-            //min-height: 50vh;
-            // display: flex;
-            // flex-direction: column;
+            // min-height: 50vh;
+            display: flex;
+            flex-direction: column;
             // flex-grow: 1;
-            // justify-content: space-around;
+            justify-content: space-around;
             background-color: $color-1;
             color: rgba(177, 196, 221, 0.5);
+
+
+
 
             .white {
                 color: white;
@@ -187,6 +196,7 @@ html {
                     padding-top: 50px;
                     flex-direction: row;
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-around;
 
                     .card {
