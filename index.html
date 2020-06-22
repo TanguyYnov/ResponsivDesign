@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
+    <!-- <link rel="stylesheet" href="./dist/reset.css" type="text/css" /> -->
     <link rel="stylesheet" href="./dist/style.css" type="text/css" />
   </head>
   <body>
@@ -51,11 +52,13 @@
       </div>
     </nav>
 
+    <!-- BLOCK-MAIN -->
     <div class="block-main">
       <h3>
         TP : Fixed Navbar desktop created with flexbox.
       </h3>
 
+      <!-- LOREM IPSUM -->
       <div class="container">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
@@ -164,81 +167,136 @@
           voluptatum illo cumque nam debitis neque nisi maxime numquam? Eaque!
         </p>
       </div>
+      <!-- END LOREM IPSUM -->
     </div>
+    <!-- END BLOCK-MAIN -->
 
+    <!-- FOOTER -->
     <footer>
-      <div class="endmenu">
-        <div class="endmenu-1">
+      <div class="wrapper-footer">
+        <div class="footer-title">
           <h2>LA DEUXIEME VIE DES INSTRUMENTS</h2>
+          <hr class="hr"></hr>
         </div>
-
-        <div class="endmenu-2">
-          <div class="block-1">
-            <i class="fas fa-shopping-cart"></i>&nbsp;
-            <h3>BOUTIQUE</h3>
-            <p>Nous vous accompagnons dans vos démarches et essais</p>
-            <a href="/.">
-              <h4>
-                Voir le catalogue
-                <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
-              </h4></a
-            >
+        <div class="footer-body">
+          <!-- BOUTIQUE -->
+          <div class="card">
+            <div class="card-body">
+              <div class="wrapper white">
+                <i class="fas fa-shopping-cart fa-4x"></i>&nbsp;
+                <h3 class="card-title">BOUTIQUE</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  Nous vous accompagnons dans vos démarches et essais
+                </p>
+              </div>
+              <div class="card-link">
+                <a href="/.">
+                  <h4>
+                    Voir le catalogue
+                    <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
+                  </h4>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="block-2">
-            <i class="fas fa-hand-holding-water"></i>&nbsp;
-            <h3>BENEFICES</h3>
-            <p>
-              Nous vous conseillons pour le vendre dans les meilleures
-              conditions
-            </p>
-            <a href="/.">
-              <h4>
-                Prendre Rendez vous
-                <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
-              </h4>
-            </a>
+          <!-- END BOUTIQUE -->
+    
+          <!-- BENEFICES -->
+          <div class="card">
+            <div class="card-body">
+              <div class="wrapper white">
+              <i class="fas fa-hand-holding-water  fa-4x"></i>&nbsp;
+              <h3 class="card-title">BENEFICES</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  Nous vous conseillons pour le vendre dans les meilleures
+                  conditions
+                </p>
+              </div>
+              <div class="card-link">
+                <a href="/.">
+                  <h4>
+                    Prendre Rendez vous
+                    <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
+                  </h4>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="block-3">
-            <i class="fas fa-guitar"></i>&nbsp;
-            <h3>MUSIQUE</h3>
-            <p>Vous voulez découvrir un instrument ?</p>
-            <a href="/."
-              ><h4>
-                Voir les disponibilités
-                <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
-              </h4></a
-            >
+          <!-- END BENEFICES -->
+    
+          <!-- MUSIQUE -->
+          <div class="card">
+            <div class="card-body">
+              <div class="wrapper white">
+              <i class="fas fa-guitar fa-4x"></i>&nbsp;
+              <h3 class="card-title">MUSIQUE</h3>
+              </div>
+              <div class="card-text">
+                <p>
+                  Vous voulez découvrir un instrument ?
+                </p>
+              </div>
+              <div class="card-link">
+                <a href="/.">
+                  <h4>
+                    Voir les disponibilités
+                    <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
+                  </h4>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="block-4">
-            <h3>NOS HORAIRES D'OUVERTURE</h3>
-            <p>
-              Dimanche, Lundi : Fermé <br />Mardi : 10:00 - 12:00, 14:00
-              -18:00<br />Mercredi : 10:00 - 12:00, 14:00 -18:00<br />Jeudi :
-              10:00 - 12:00, 14:00 -18:00<br />Vendredi : 10:00 - 12:00, 14:00
-              -18:00<br />Samedi : 10:00 - 12:00
-            </p>
-            <a href="/."
-              ><h4>
-                Nous contacter <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
-              </h4></a
-            >
+          <!-- END MUSIQUE -->
+    
+          <!-- HORAIRES -->
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title white">NOS HORAIRES D'OUVERTURE</h3>
+              <div class="card-text">
+                <p>
+                  Dimanche, Lundi : Fermé <br />Mardi : 10:00 - 12:00, 14:00
+                  -18:00<br />Mercredi : 10:00 - 12:00, 14:00 -18:00<br />Jeudi :
+                  10:00 - 12:00, 14:00 -18:00<br />Vendredi : 10:00 - 12:00, 14:00
+                  -18:00<br />Samedi : 10:00 - 12:00
+                </p>
+              </div>
+              <div class="card-link">
+                <a href="/.">
+                  <h4>
+                    Nous contacter
+                    <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
+                  </h4>
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- END HORAIRES -->
         </div>
-        <div class="endmenu-3">
-          <h4><i class="fas fa-phone"></i>&nbsp;+331 23 45 67 89</h4>
+        <div class="wrapper-bottom-footer"> 
+        <div class="footer-contact">
+          <h4 class="white">
+            <i class="fas fa-phone color-phone fa-2x"></i>
+            &nbsp;+331 23 45 67 89
+         </h4>
           <p>
-            Réseaux sociaux <i class="fas fa-twitter"></i>&nbsp;<i
-              class="fas fa-instagram"
-            ></i
-            >&nbsp;<i class="fas fa-facebook"></i>&nbsp;
+           Suivez nous sur les réseaux sociaux : 
+           <i class="fab fa-twitter fa-2x white"></i>&nbsp;
+            <i class="fab fa-instagram fa-2x white"></i>&nbsp;
+            <i class="fab fa-facebook fa-2x white"></i>&nbsp;
           </p>
         </div>
-        <div class="endmenu-4">
-          2020 - Tout droit réservé - Mentions Légales - CGU / CGV - Lorem
-          Impsum, 2 rue de la paix 44000 Nantes - SIREN 123456789 -+331 23 45 67
-          89
+        <div class="copyright">
+          2020 - Tout droit réservé - Mentions Légales - CGU / CGV - Lorem Impsum,
+          2 rue de la paix 44000 Nantes - SIREN 123456789 -+331 23 45 67 89
         </div>
       </div>
+      </div>
     </footer>
+    <!-- END FOOTER -->
   </body>
+                
 </html>

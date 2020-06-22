@@ -23,14 +23,20 @@ html nav {
   padding: 10px;
   color: white;
   background-color: #173754;
-  box-shadow: 0px 0px 19px 0px grey;
+  -webkit-box-shadow: 0px 0px 19px 0px grey;
+          box-shadow: 0px 0px 19px 0px grey;
   /* BLOCK MAIN MENU*/
 }
 
 body nav .main-menu,
 html nav .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: auto;
   /* BLOCK LEFT */
   /* BLOCK MIDDLE */
@@ -40,9 +46,15 @@ html nav .main-menu {
 body nav .main-menu .block-left,
 html nav .main-menu .block-left {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   /* BLOCK PLACEHOLDER */
 }
 
@@ -51,10 +63,16 @@ html nav .main-menu .block-left .placeholder {
   width: 150px;
   height: 30px;
   margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: grey;
   background-color: lightgrey;
   border-radius: 4px;
@@ -68,17 +86,26 @@ html nav .main-menu .block-middle {
 body nav .main-menu .block-right,
 html nav .main-menu .block-right {
   width: 30%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   /* NAV LINK */
   /* NAV LINK ON HOVER */
 }
 
 body nav .main-menu .block-right .nav-link,
 html nav .main-menu .block-right .nav-link {
-  flex: auto;
-  align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 10px;
   /* BOOTSTRAP SM BREAKPOINT */
 }
@@ -108,7 +135,8 @@ html .block-main .container {
   margin: 15px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 0px 19px 0px grey;
+  -webkit-box-shadow: 0px 0px 19px 0px grey;
+          box-shadow: 0px 0px 19px 0px grey;
 }
 
 body .block-main .container p,
@@ -168,8 +196,13 @@ html .block-main .container p {
   html footer .wrapper-footer {
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* FOOTER-TITLE */
     /* FOOTER-BODY */
     /* WRAPPER-FOOTER */
@@ -190,9 +223,15 @@ html .block-main .container p {
   body footer .wrapper-footer .footer-body,
   html footer .wrapper-footer .footer-body {
     padding-top: 50px;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body footer .wrapper-footer .footer-body .card,
   html footer .wrapper-footer .footer-body .card {
@@ -201,9 +240,13 @@ html .block-main .container p {
   }
   body footer .wrapper-footer .footer-body .card .card-body,
   html footer .wrapper-footer .footer-body .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     width: 100%;
     height: 100%;
   }
@@ -211,7 +254,9 @@ html .block-main .container p {
   html footer .wrapper-footer .footer-body .card .card-body .wrapper .card-title {
     width: 100%;
     height: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body footer .wrapper-footer .footer-body .card .card-body .card-text,
   html footer .wrapper-footer .footer-body .card .card-body .card-text {
@@ -238,8 +283,12 @@ html .block-main .container p {
   }
   body footer .wrapper-footer .wrapper-bottom-footer .footer-contact,
   html footer .wrapper-footer .wrapper-bottom-footer .footer-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-bottom: 1px solid rgba(177, 196, 221, 0.5);
   }
   body footer .wrapper-footer .wrapper-bottom-footer .copyright,
@@ -247,3 +296,4 @@ html .block-main .container p {
     margin-top: 15px;
   }
 }
+/*# sourceMappingURL=style.css.map */
