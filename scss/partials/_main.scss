@@ -1,0 +1,127 @@
+/* BLOCK-MAIN */
+.block-main {
+    /* Display for Mobile and Tablet */
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    /* CONTAINER */
+    .container {
+        height: auto;
+        margin: 20px;
+        padding: 15px;
+        background-color: white;
+        box-shadow: 0px 0px 5px 0px grey;
+
+        .article {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 5%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .article-wrapper {
+                border: 2px solid rgba(177, 196, 221, 0.5);
+                border-radius: 4px;
+                padding-bottom: 10px;
+
+                .article-img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .article-content {
+                    max-width: 100%;
+                    padding: 10px;
+                    margin: auto;
+
+                    h2 {
+                        margin: 0;
+                        color: $color-2;
+                        font-size: 1.5em;
+                        font-weight: bolder;
+                    }
+
+                    p {
+                        margin: 10px auto;
+                        font-size: 0.9em;
+                        color: #666;
+                    }
+
+                    button {
+                        color: white;
+                        background-color: #007bff;
+                        margin: 10px auto;
+                        padding: 10px;
+                        font-weight: bold;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        user-select: none;
+                        border: 1px solid transparent;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Display for Laptop XL Screen */
+@media (min-width: $screen-md) {
+    .block-main {
+        padding-top: 10%;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .article {
+                display: flex;
+                width: 80%;
+                margin-bottom: 2%;
+
+                .article-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .article-img {
+                        width: 35%;
+                        height: auto;
+                    }
+
+                    .article-content {
+                        justify-content: flex-end;
+                        width: 30%;
+                        padding: 15px;
+                        border: 2px solid rgba(177, 196, 221, 0.5);
+                        border-radius: 4px;
+                        border: none;
+
+                        h2 {
+                            padding: 10px 0;
+                            font-size: 2em;
+                        }
+
+                        p {
+                            font-size: 1em;
+                            color: #666;
+                        }
+                    }
+                }
+
+                .reverse {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

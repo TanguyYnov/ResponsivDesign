@@ -1,0 +1,107 @@
+/* FOOTER */
+
+/* MEDIA QUERIES FOR SCREEN-XL */
+footer {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-1;
+    color: rgba(177, 196, 221, 0.5);
+
+    .white {
+        color: white;
+    }
+
+    .color-phone {
+        color: #6a93e2;
+    }
+
+    .wrapper-footer {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        /* FOOTER-TITLE */
+        .footer-title {
+            text-align: center;
+            padding: 30px 0px;
+            color: white;
+
+            .hr {
+                width: 8%;
+                height: 5px;
+                background-color: rgba(245, 237, 126, 0.904);
+                border-radius: 10px;
+            }
+        }
+
+        /* FOOTER-BODY */
+        .footer-body {
+            padding-top: 50px;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .card {
+                padding: 15px;
+                width: 17%;
+                width: 300px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .card-body {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                width: 100%;
+                height: 100%;
+
+                .wrapper {
+                    .card-title {
+                        width: 100%;
+                        height: auto;
+                        justify-content: center;
+                    }
+                }
+
+                .card-text {
+                    width: 100%;
+                    height: auto;
+
+                    p {
+                        color: rgba(177, 196, 221, 0.5);
+                    }
+                }
+
+                .card-link {
+                    height: auto;
+
+                    h4 {
+                        color: rgba(245, 237, 126, 0.904);
+                    }
+                }
+            }
+        }
+    }
+
+    /* WRAPPER-FOOTER */
+    .wrapper-bottom-footer {
+        margin-bottom: 25px;
+
+        /* FOOTER-CONTACT */
+        .footer-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(177, 196, 221, 0.5);
+        }
+
+        /* COPYRIGHT */
+        .copyright {
+            margin-top: 15px;
+        }
+    }
+}
